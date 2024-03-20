@@ -1,0 +1,204 @@
+header {
+    font-family: "Noto Sans Oriya", sans-serif;
+    background-color: #f5f5f5;
+    height:100px;
+    justify-content:center ;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+
+}
+
+.logo {
+    width:120px;
+    height:180px;
+    position: absolute;
+    top:-23px;
+}
+
+.log {
+    font-size: xx-large;
+    position: absolute;
+    left:94px;
+    font-weight: 600;
+}
+
+body {
+    background-color: #366350;
+    min-height: 100vh; /* Minimum height of the viewport */
+     margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.portals {
+    width:500px;
+    height:550px;
+    background-color: #f5f5f5;
+    position: relative;
+    left:450px;
+    top:40px;
+    border-radius: 30px;
+    font-family: "Noto Sans Oriya", sans-serif;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.title {
+    font-weight: 600;
+    line-height: 3;
+    position: relative;
+    top:12px;
+}
+
+.username {
+    padding:6px;
+    font-size: medium;
+ font-family: "Noto Sans Oriya", sans-serif;
+ width:250px;
+
+}
+
+.password {
+    margin-top: 20px;
+    padding:6px;
+    font-size: medium;
+ font-family: "Noto Sans Oriya", sans-serif;
+ width:250px;
+}
+
+
+
+.submit {
+    padding:10px;
+    background-color: #366350;
+    border: #366350 ;
+    color: white;
+    font-size: medium;
+    position: relative;
+    width:100px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+    top:30px;
+    font-family: "Noto Sans Oriya", sans-serif;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.reg {
+    position: relative;
+    top:80px;
+    font-weight: 500;
+    font-size: small;
+}
+.submit:hover {
+    background-color: #4e9276;
+}
+
+.des {
+    font-weight: 500;
+    font-size: large;
+    position:relative;
+    bottom:50px;
+}
+
+.gate {
+    width:400px;
+    height:350px;
+    border: none;
+    position: relative;
+    left:10%;
+    bottom:10%;
+}
+
+
+#togglePassword {
+    position: absolute;
+    top: 61%;
+    right: 117px;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+a.student {
+    display: inline-block; /* or display: block; */
+    height:130px;
+    width:400px;
+    background-color: inherit;
+    border-width: .6px;
+    text-decoration: none;
+    border-style: dashed;
+    color: black;
+}
+
+
+.bound {
+    width:350px;
+    position: relative;
+    bottom:30px;    
+    margin-bottom: 10px;;
+}
+a.forgot {
+    font-size: small;
+    color: blue;
+    position: relative;
+    right:78px;
+}
+
+a.back {
+    position: relative;
+    right:200px;
+    top:20px;    
+}
+
+a:visited {
+    color:blue;
+}
+
+p {
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-size: small;
+    font-weight: 500;
+}
+
+.students {
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    
+}
+
+.staffs {
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    
+}
+
+a.staff {
+
+    display: inline-block; /* or display: block; */
+    height:130px;
+    width:400px;
+    margin-top: 25px;
+    background-color: inherit;
+    border-width: .6px;
+    text-decoration: none;
+    border-style: dashed;
+    color: black;
+
+}
+
+.other {
+    position: inherit;
+    right:152px;
+    background-color: inherit;
+    border: none;
+    top:8px;
+    color: blue;
+    font-family: "Noto Sans Oriya", sans-serif;
+    text-decoration: underline;
+    cursor:pointer;
+
+}

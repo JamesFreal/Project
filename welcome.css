@@ -1,0 +1,146 @@
+header {
+    font-family: "Noto Sans Oriya", sans-serif;
+    background-color: #f5f5f5;
+    height:100px;
+    justify-content:center ;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+
+}
+
+.logo {
+    width:120px;
+    height:180px;
+    position: absolute;
+    top:-23px;
+}
+
+.log {
+    font-size: xx-large;
+    position: absolute;
+    left:94px;
+    font-weight: 600;
+}
+
+body {
+    background-color: #366350;
+    min-height: 100vh; /* Minimum height of the viewport */
+     margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.portals {
+    width:500px;
+    height:600px;
+    background-color: #f5f5f5;
+    position: relative;
+    left:450px;
+    top:10px;
+    border-radius: 30px;
+    font-family: "Noto Sans Oriya", sans-serif;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.title {
+    font-weight: 600;
+    line-height: 3;
+}
+
+.des {
+    font-weight: 500;
+    font-size: large;
+    position:relative;
+    bottom:50px;
+}
+
+.gate {
+    width:400px;
+    height:350px;
+    border: none;
+    position: relative;
+    left:10%;
+    bottom:10%;
+}
+
+a.student {
+    display: inline-block; /* or display: block; */
+    height:130px;
+    width:400px;
+    background-color: inherit;
+    border-width: .6px;
+    text-decoration: none;
+    border-style: dashed;
+    color: black;
+}
+
+
+a.org {
+    display: inline-block; /* or display: block; */
+    height:130px;
+    width:400px;
+    background-color: inherit;
+    border-width: .6px;
+    text-decoration: none;
+    border-style: dashed;
+    color: black;
+    margin-top: 15px;
+}
+
+
+
+
+p {
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-size: small;
+    font-weight: 500;
+}
+
+.students {
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    
+}
+
+.staffs {
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    
+}
+
+.orgs {
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    
+}
+
+
+a.staff {
+
+    display: inline-block; /* or display: block; */
+    height:130px;
+    width:400px;
+    margin-top: 15px;
+    background-color: inherit;
+    border-width: .6px;
+    text-decoration: none;
+    border-style: dashed;
+    color: black;
+
+}
+
+.other {
+    position: inherit;
+    right:152px;
+    background-color: inherit;
+    border: none;
+    top:8px;
+    color: blue;
+    font-family: "Noto Sans Oriya", sans-serif;
+    text-decoration: underline;
+    cursor:pointer;
+
+}
