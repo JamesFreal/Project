@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #334d3c;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box {
+    background-color: #bbbbbb;
+    padding: 40px;
+    border-radius: 60px;
+    margin-top: -1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.content-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content label {
+    margin-right: 359px;
+    margin-bottom: -30px;
+    
+
+}
+
+.content-box input {
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: -14px; /* Adjust spacing between inputs */
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    position: relative;
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    margin-top: -12px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar img {
+    width: 60%;
+    max-width: 200px;
+    margin-top: -10%;
+    margin-right: 70px;
+}
+
+
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar a:hover::before {
+    width: calc(100% - 64px);
+    background-color: #f1f1f1;
+}
+
+
+
+.box {
+    border: none;
+    width: 700px;
+    height: 531px;
+    position: relative;
+    top:200px;
+    right:100px;
+    position: relative;
+    background-color: rgb(199, 206, 211);
+    border-radius: 30px;
+
+   
+
+}
+
+
+.content {
+    display:flex;
+    align-content:center;
+    justify-content:center ;
+    text-align: center;
+}
+
+.content img {
+    width: 16%;
+    border: none;
+    border-radius: 100px;
+    height: 20%;
+    bottom:300px;
+}

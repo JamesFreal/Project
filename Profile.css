@@ -1,0 +1,445 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #366350;
+    overflow: hidden;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:3 ;
+}
+
+
+
+
+.sidebar a {
+    position: relative;
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    margin-top: -12px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar a:hover::before {
+    width: calc(100% - 64px);
+    background-color: #f1f1f1;
+}
+
+.sidebar .but:hover::before {
+    width: calc(100% - 64px);
+    background-color: #f1f1f1;
+}
+
+.sidebar .but::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+
+.sidebar a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar img {
+    width: 60%;
+    max-width: 200px;
+    margin-top: -10%;
+    margin-right: 70px;
+}
+
+.content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:100%;
+    
+}
+
+.content img {
+    width: 200px;
+    margin-left: 0%;
+    margin-top: 30px;
+    border: none;
+    border-radius: 210px;
+    border:solid;
+    position: relative;
+    right:300px;
+    height:200px;
+    top:90px;
+}
+
+.form {
+    border:none;
+    font-family: "Noto Sans Oriya", sans-serif;
+    width: 700px; /* or any other percentage value */
+    height: 600px; /* or any other percentage value */
+    position: absolute;
+    left:320px;
+    top:90px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.925);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    display: block; /* Display the label as a block-level element */
+    margin-bottom: 16px;
+    margin-left:55px;
+}
+
+
+input {
+    padding:10px;
+    width:200px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    border-radius: 3px;
+    margin-bottom:12px;
+    font-size: medium;
+    left:30px;
+}
+
+
+
+.left {
+    position: relative;
+    left:50px;
+    border:none;
+    height:300px;
+    width:250px;
+}
+
+
+select {
+    border:solid;
+    border-width:.4px ;
+    margin-right:10px;
+    font-family: "Noto Sans Oriya", sans-serif;
+    font-size: medium;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    padding:10px;
+    border-radius: 12px;
+    position: inherit;
+    left:35px;
+}
+.right {
+    position: relative;
+    left:400px;
+    bottom:300px;
+    border:none;
+    height:300px;
+    width:200px;
+}
+
+.text {
+margin-left: 30px;
+margin-top: 30px;
+margin-bottom:50px;
+font-weight: 500;
+}
+
+.but {
+    border:none;
+    font-size: large;
+    background-color: inherit;
+    transition: .3s;
+}
+
+
+.but:hover {
+    color: #f1f1f1;
+}
+.ask {
+    display: none;
+    border:none;
+    position: absolute;
+    width:500px;
+    height:150px;
+    z-index: 5;
+    top:300px;
+   border-radius: 9px;
+   font-family: "Noto Sans Oriya", sans-serif;
+   background-color: #f5f5f5;
+   
+}
+
+
+.log    {
+    margin-left: 34px;
+}
+
+
+.yes {
+    padding:10px;
+    position: absolute;
+    right:100px;
+    width:70px;
+    bottom:13px;
+    border:none;
+    background-color: #7f8582;
+    font-family: "Noto Sans Oriya", sans-serif;
+    border-radius: 8px;
+    font-size: medium;
+}
+.over {
+    display: none;
+    position: fixed;
+    width:5000px;
+    height:5000px;
+    border: solid;
+    background-color: #000000;
+    z-index: 4;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.over.active {
+    display: block;
+    opacity: .3;
+    pointer-events: auto;
+  }
+
+.overlay.active .overlay-content {
+    opacity: 0;
+  }
+
+
+.no {
+    padding:10px;
+    position: absolute;
+    right:20px;
+    width:70px;
+    bottom:13px;
+    background-color: #7f8582;
+    font-family: "Noto Sans Oriya", sans-serif;
+    border-radius: 8px;
+    border:none;
+    font-size: medium;
+}
+
+
+
+
+
+.sure {
+    font-size: large;    
+   
+    margin-left: 14px;
+    line-height: 3px;
+
+}
+
+
+.edit {
+    border:none;
+    background-color: rgb(116, 155, 240);
+    position: absolute;
+    bottom:30px;
+    right:75px;
+    width:80px;
+    height:35px;
+    border-radius:5px ;
+    line-height: 32px;
+   text-align: center;
+   cursor:pointer;
+   transition: .3s;
+}
+.save {
+    border:none;
+    background-color: rgb(80, 190, 58);
+    position: absolute;
+    bottom:30px;
+    right:75px;
+    width:80px;
+    height:35px;
+    font-size: medium;
+    border-radius:5px ;
+    display: none;
+    line-height: 32px;
+   text-align: center;
+   cursor:pointer;
+   transition: .3s;
+   font-family: "Noto Sans Oriya", sans-serif;
+}
+
+.cancel {
+    border:none;
+    background-color: rgb(218, 50, 50);
+    position: absolute;
+    bottom:30px;
+    display: none;
+    right:173px;
+    font-size: medium;
+    width:80px;
+    height:35px;
+    border-radius:5px ;
+    line-height: 32px;
+    font-family: "Noto Sans Oriya", sans-serif;
+   text-align: center;
+   cursor:pointer;
+   transition: .3s;
+}
+.edit:hover {
+    background-color: rgb(52, 114, 247);
+}
+
+.cancel:hover {
+    background-color: rgb(252, 49, 49);
+}
+
+.save:hover {
+    background-color: rgb(94, 223, 69);
+}
+.face {
+    border:none;
+    position: relative;
+    left:510px;
+    top:95px;
+    width:330px;
+    height:400px;   
+    background-color:rgba(255, 255, 255, 0.925);
+    text-align: center;
+    font-family: "Noto Sans Oriya", sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+
+}
+
+.pic {
+    border:none;
+    width:120px;
+    height:120px;
+    position: relative;
+    left:100px;
+    top:60px;
+    border-radius:90px;
+    background-image:url(Profile.jpg);
+    background-size: cover;
+    z-index: 3;
+}
+
+.cover {
+    border:none;
+    height: 150px;
+    position: relative;
+    bottom:143px;
+    background-image: url(pixel.jpg);
+    background-size: cover;
+}
+
+.upload {
+    border:none;
+    position:relative;
+    top:140px;
+    left:510px;
+    width:330px;
+    height:145px;
+    background-color:rgba(255, 255, 255, 0.925);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    font-family: "Noto Sans Oriya", sans-serif;
+
+}
+
+.change {
+    font-weight: 500;
+    font-size: x-large;
+    position: relative;
+    bottom:9px;
+    left:10px;
+}
+
+
+.u-i {
+    border:none;
+    width:70px;
+    height:70px;
+    position: relative;
+    bottom:30px;
+    left:12px;
+    background-image: url(Profile.jpg);
+    filter: blur(1px);
+    background-size: contain;
+}
+.name {
+   position: absolute;
+   left:25%;
+   top:210px;
+   font-size:large;
+   font-weight:500;
+}
+.fa-paperclip {
+    position: absolute;
+    left:90px;
+    bottom:40px;
+    font-size: xx-large;
+}
+.mail {
+    position: absolute;
+    left:25%;
+    top:240px;
+    font-size:medium;
+ }
+
+
+.desc {
+    position: absolute;
+    width:120px;
+    right:80px;
+    top:55px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.desc:hover{
+    text-decoration: underline;
+}
+ .address {
+    position: absolute;
+    left:15%;
+    top:270px;
+    font-size:small;
+ }
